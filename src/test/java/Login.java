@@ -95,7 +95,9 @@ elLogin.click();
 
  }
 
+public  void  ccslocatrstest (){
 
+}
 
  @AfterMethod
  public void postCondition(){
