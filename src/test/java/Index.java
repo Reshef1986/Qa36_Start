@@ -44,18 +44,18 @@ public class Index {
     @Test
     public void itemsTests() {
         // find Item1 & click() ===> assert that "div-alert" contains message  "Clicked by Item 1"
-        WebElement item11 = wd.findElement(By.cssSelector("[href = '#item1']"));
+        WebElement item1 = wd.findElement(By.cssSelector("[href = '#item1']"));
         // wd.findElement(By.xpath("//*[@ href ='#item1']"));
-        item11.click();
+        item1.click();
         WebElement squareRes = wd.findElement(By.cssSelector("#alert"));
         wd.findElement(By.xpath("//*[@id ='alert']"));
         System.out.println("Text in square after click Item 1 =  " + squareRes.getText());
         Assert.assertTrue(squareRes.getText().contains("Clicked by Item 1"));
 
         // find Item3 & click() ===> assert that "div-alert" contains message  "Clicked by Item 3"
-        WebElement item2 = wd.findElement(By.cssSelector("[href = '#item3']"));
+        WebElement item3 = wd.findElement(By.cssSelector("[href = '#item3']"));
         //wd.findElement(By.xpath("//*[@href ='#item3' ]"));
-        item2.click();
+        item3.click();
         System.out.println("Text in square after click Item 3 =  " + squareRes.getText());
         Assert.assertTrue(squareRes.getText().contains("Clicked by Item 3"));
     }
