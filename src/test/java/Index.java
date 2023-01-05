@@ -58,6 +58,13 @@ public class Index {
         item3.click();
         System.out.println("Text in square after click Item 3 =  " + squareRes.getText());
         Assert.assertTrue(squareRes.getText().contains("Clicked by Item 3"));
+
+        //Домашка с урока
+      
+
+        //----------------------------------------------------------------------//
+
+
     }
 
     @Test
@@ -67,12 +74,12 @@ public class Index {
        // wd.findElement(By.xpath("//*[@name = 'name']"));
         fildName.click();
         fildName.clear();
-        fildName.sendKeys("Alex");
+        fildName.sendKeys("אלכס");
         WebElement fildSureName = wd.findElement(By.cssSelector("[name ='surename']"));
       //  wd.findElement(By.xpath("//*[@name='surename']"));
         fildSureName.click();
         fildSureName.clear();
-        fildSureName.sendKeys("Zaxarov");
+        fildSureName.sendKeys("אלכס");
 
         WebElement sendButton = wd.findElement(By.cssSelector(".btn"));
         //wd.findElement(By.xpath("//*[@class='btn']"));
@@ -83,7 +90,7 @@ public class Index {
         System.out.println("You entered a first and last name = " + squareRes.getText());
         // Assert that "div-alert" contains text with name + surename
 
-        Assert.assertTrue(squareRes.getText().contains("Alex Zaxarov"));
+        Assert.assertTrue(squareRes.getText().contains("אלכס אלכס"));
 
 
     }
